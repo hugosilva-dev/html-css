@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            /*  backgroud-size: contain (imagem 100% exibida sem cortes)
-                backgroud-size: cover
+            background-attachment: fixed;
+            
+            * backgroud-size: contain (imagem 100% exibida sem cortes)
+            * backgroud-size: cover
             (cobrir a tela inteira - preencher)
             */
+
+            /*SHORTHAND - BACKGROUND
+            color > image > position > repeat > [size] > attachment */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+             /* o [size] não pega */
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -32,7 +41,10 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, necessitatibus repellat? Minus laboriosam iste ex maxime corrupti dicta tempora natus officia aperiam ullam tenetur inventore placeat praesentium eveniet, earum excepturi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corporis, fugit amet perspiciatis totam hic voluptas tempora pariatur harum, voluptatem nihil in et nobis sunt animi officia necessitatibus voluptatum voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et, fugit eaque accusantium a, ipsum laboriosam ad in voluptatem, hic voluptatibus. Illo fugiat debitis veniam nam cumque esse provident accusamus.</p>
-        <!-- Se o conteúdo for muito grande a imagem pode acabar ou repetir -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, necessitatibus repellat? Minus laboriosam iste ex maxime corrupti dicta tempora natus officia aperiam ullam tenetur inventore placeat praesentium eveniet, earum excepturi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corporis, fugit amet perspiciatis totam hic voluptas tempora pariatur harum, voluptatem nihil in et nobis sunt animi officia necessitatibus voluptatum voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et, fugit eaque accusantium a, ipsum laboriosam ad in voluptatem, hic voluptatibus. Illo fugiat debitis veniam nam cumque esse provident accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, necessitatibus repellat? Minus laboriosam iste ex maxime corrupti dicta tempora natus officia aperiam ullam tenetur inventore placeat praesentium eveniet, earum excepturi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corporis, fugit amet perspiciatis totam hic voluptas tempora pariatur harum, voluptatem nihil in et nobis sunt animi officia necessitatibus voluptatum voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et, fugit eaque accusantium a, ipsum laboriosam ad in voluptatem, hic voluptatibus. Illo fugiat debitis veniam nam cumque esse provident accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, necessitatibus repellat? Minus laboriosam iste ex maxime corrupti dicta tempora natus officia aperiam ullam tenetur inventore placeat praesentium eveniet, earum excepturi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corporis, fugit amet perspiciatis totam hic voluptas tempora pariatur harum, voluptatem nihil in et nobis sunt animi officia necessitatibus voluptatum voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et, fugit eaque accusantium a, ipsum laboriosam ad in voluptatem, hic voluptatibus. Illo fugiat debitis veniam nam cumque esse provident accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, necessitatibus repellat? Minus laboriosam iste ex maxime corrupti dicta tempora natus officia aperiam ullam tenetur inventore placeat praesentium eveniet, earum excepturi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corporis, fugit amet perspiciatis totam hic voluptas tempora pariatur harum, voluptatem nihil in et nobis sunt animi officia necessitatibus voluptatum voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et, fugit eaque accusantium a, ipsum laboriosam ad in voluptatem, hic voluptatibus. Illo fugiat debitis veniam nam cumque esse provident accusamus.</p>
     </main>
 </body>
 </html>
